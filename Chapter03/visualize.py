@@ -100,6 +100,9 @@ plt.xlabel("Passenger Count")
 plt.title("Histogram of Passenger Count")
 plt.show()
 
+df.loc[df['passenger_count']==0, 'passenger_count']=1
+
+
 df.plot.scatter('pickup_longitude', 'pickup_latitude')
 plt.show()
 
